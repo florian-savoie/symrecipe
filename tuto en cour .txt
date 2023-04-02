@@ -1,0 +1,7 @@
+#8   58 min
+
+
+utile dans se tuto 
+PHP Namespace Resolver / trouver le chemin d'une class
+https://bootswatch.com/united/  template bs5
+php bin/console d:f:l reload les fixtures
