@@ -5,6 +5,7 @@
 {% block body %}
 <div class="container mt-4">
 <h1>Mes Ingredient</h1>
+
 <a href={{path('ingredient.new')}} class="btn btn-primary">Cree un ingredient</a>
 {# read and display just one flash message type #}
 {% for message in app.flashes('succes') %}
@@ -24,6 +25,8 @@
       <th scope="col">nom</th>
       <th scope="col">prix</th>
       <th scope="col">date</th>
+      <th scope="col">edition</th>
+      <th scope="col">suppresion</th>
     </tr>
   </thead>
   <tbody>
@@ -33,6 +36,8 @@
       <td>{{ingredient.name}}</td>
       <td>{{ingredient.price}}</td>
       <td>{{ingredient.createdAt |date("d/m/Y")}}</td>
+      <td><a href="{{ path('ingredient.edit' , {id: ingredient.id }) }}"class="btn btn-info">modifier</a></td>
+      <td><a href="{{ path('ingredient.delete' , {id: ingredient.id }) }}"class="btn btn-danger">supprimer</a></td>
     </tr>
 {%  endfor %}
 

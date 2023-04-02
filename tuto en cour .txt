@@ -1,7 +1,12 @@
-#8   58 min
+#9   44 min
 
 
 utile dans se tuto 
 PHP Namespace Resolver / trouver le chemin d'une class
 https://bootswatch.com/united/  template bs5
 php bin/console d:f:l reload les fixtures
+php bin/console make:table  cree une table bdd
+php bin/console d:d:d --force Dropped database
+php bin/console d:d:c  Created database
+php bin/console make:controller name   cree un controller 
+php bin/console make:form 

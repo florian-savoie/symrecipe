@@ -1,0 +1,69 @@
+{% extends "base.html.twig" %}
+{% block title %}Symrecipe-nouvelle recette{% endblock %}
+{% block body %}
+<div class="container">
+<h1>Creation d'une recette </h1>
+
+{{ form_start(form) }}
+
+      <div class="form-group">
+              {{ form_label(form.name) }}
+              {{ form_widget(form.name) }}
+              <div class="form-error">
+              {{ form_errors(form.name) }}
+              </div>
+    </div>
+
+          <div class="form-group">
+              {{ form_label(form.time) }}
+              {{ form_widget(form.time) }}
+              <div class="form-error">
+              {{ form_errors(form.time) }}
+              </div>
+    </div>
+              <div class="form-group">
+              {{ form_label(form.nbPeople) }}
+              {{ form_widget(form.nbPeople) }}
+              <div class="form-error">
+              {{ form_errors(form.nbPeople) }}
+              </div>
+              
+          <div class="form-group">
+              {{ form_label(form.difficulty) }}
+              {{ form_widget(form.difficulty) }}
+              <div class="form-error">
+              {{ form_errors(form.difficulty) }}
+              </div>
+    </div>
+
+    </div>
+          <div class="form-group">
+              {{ form_label(form.desscription) }}
+              {{ form_widget(form.desscription) }}
+              <div class="form-error">
+              {{ form_errors(form.desscription) }}
+              </div>
+    </div>
+          <div class="form-group">
+              {{ form_label(form.price) }}
+              {{ form_widget(form.price) }}
+              <div class="form-error">
+              {{ form_errors(form.price) }}
+              </div>
+    </div>
+          <div class="form-group">
+              {{ form_label(form.isFavorite) }}
+              {{ form_widget(form.isFavorite) }}
+              <div class="form-error">
+              {{ form_errors(form.isFavorite) }}
+              </div>
+ 
+              {{ form_row(form.ingredients) }}
+
+    </div>
+
+  
+
+{{ form_end(form) }}
+</div>
+{% endblock  %}
